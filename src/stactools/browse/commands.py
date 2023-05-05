@@ -15,7 +15,7 @@ def launch_browser(catalog_uri: str) -> None:
     catalog_filename = os.path.basename(catalog_uri)
 
     with TemporaryDirectory() as tmp_dir:
-        for fname in ["Dockerfile-node", "Dockerfile-titiler"]:
+        for fname in ["Dockerfile-node", "Dockerfile-titiler", "config_tile.js"]:
             p = os.path.join(os.path.dirname(__file__), fname)
             shutil.copy(p, os.path.join(tmp_dir, fname))
 

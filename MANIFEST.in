@@ -1,3 +1,4 @@
 include src/stactools/browse/Dockerfile-node
 include src/stactools/browse/Dockerfile-titiler
 include src/stactools/browse/docker-compose.yml.template
+include src/stactools/browse/config_tile.js
